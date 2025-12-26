@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #4facfe 100%);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+}
+
+.wrapper{
+	max-width: 400px;
+	width: 100%;
+	margin: 20px;
+}
+
+
+.wrapper .header{
+	max-width: 350px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.wrapper .header .top,
+.wrapper .signup{
+	background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 40px 40px 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.wrapper .header .top:hover,
+.wrapper .signup:hover{
+	box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.wrapper .header .logo img{
+	display: block;
+	margin: 0 auto 35px;
+	transition: transform 0.3s ease;
+}
+
+.wrapper .header .logo img:hover{
+	transform: scale(1.05);
+}
+
+.wrapper .header .form .input_field{
+	margin-bottom: 15px;
+}
+
+.wrapper .header .form .input_field .input{
+	width: 100%;
+	background: #fafafa;
+	border: 1px solid #efefef;
+	font-size: 12px;
+	border-radius: 6px;
+	color: #262626;
+	padding: 12px;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wrapper .header .form .input_field .input:focus{
+	border: 1px solid #3897f0;
+	box-shadow: 0 0 0 2px rgba(56, 151, 240, 0.2);
+}
+
+.wrapper .header .form .btn{
+	margin: 15px 0;
+	background: linear-gradient(45deg, #3897f0, #4c63d2);
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wrapper .header .form .btn:hover{
+	transform: translateY(-2px);
+	box-shadow: 0 4px 15px rgba(56, 151, 240, 0.4);
+}
+
+.wrapper .header .form .btn a{
+	color: #fff;
+	display: block;
+	font-weight: 600;
+}
+
+.wrapper .header .or{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 15px;
+	margin: 20px 0 25px;
+}
+
+.wrapper .header .or .line{
+	width: 105px;
+	height: 2px;
+	background: #efefef;
+}
+
+.wrapper .header .or p{
+	color: #ff6b6b;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.wrapper .dif .fb{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+	background: linear-gradient(45deg, #4267b2, #365899);
+	padding: 10px 20px;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+
+.wrapper .dif .fb:hover{
+	opacity: 0.9;
+	transform: scale(1.02);
+}
+
+.wrapper .dif .fb p{
+	color: #fff;
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+.wrapper .dif .forgot{
+	font-size: 12px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.wrapper .dif .forgot a{
+	color: #003569;
+	transition: color 0.3s ease;
+}
+
+.wrapper .dif .forgot a:hover{
+	color: #3897f0;
+}
+
+.wrapper .signup{
+	margin: 15px 0 20px;
+	padding: 25px 40px;
+	text-align: center;
+	color: #262626;
+	background: linear-gradient(45deg, #e0f7fa, #b2ebf2);
+	border-radius: 8px;
+}
+
+.wrapper .signup a{
+	color: #3897f0;
+	font-weight: 600;
+	transition: color 0.3s ease;
+}
+
+.wrapper .signup a:hover{
+	color: #4c63d2;
+}
+
+.wrapper .apps{
+	text-align: center;
+	color: #262626;
+	margin-top: 20px;
+}
+
+.wrapper .apps p{
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.wrapper .apps a img{
+	width: 135px;
+	height: 40px;
+	margin: 0 5px;
+	transition: transform 0.3s ease;
+}
+
+.wrapper .apps a img:hover{
+	transform: scale(1.05);
+}
+
+.footer{
+	max-width: 935px;
+	width: 100%;
+	margin: 40px auto 0;
+	padding: 40px 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.footer .links ul li{
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 5px;
+}
+
+.footer .links ul li a{
+	color: #003569;
+	font-size: 12px;
+	transition: color 0.3s ease;
+}
+
+.footer .links ul li a:hover{
+	color: #3897f0;
+}
+
+.footer .copyright{
+	color: #999;
+	font-size: 12px;
+}
